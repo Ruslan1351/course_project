@@ -1,11 +1,13 @@
 #include "sc_agent_generate_random_graph.hpp"
-#include "keynodes/keynodes.hpp"
+#include "keynodes/gen_random_graph_keynodes.hpp"
 
 #include <sc-memory/sc_memory_headers.hpp>
 
 #include <vector>
 #include <algorithm>
 
+namespace dm
+{
 ScAddr ScAgentGenerateRandomGraph::GetActionClass() const
 {
   return GenerateRandomGraphKeynodes::action_generate_random_graph;
@@ -81,4 +83,5 @@ std::pair<std::vector<int>, std::vector<std::pair<int, int>>> ScAgentGenerateRan
   edges.erase(std::unique(edges.begin(), edges.end()), edges.end());
 
   return {nodes, edges};
+}
 }

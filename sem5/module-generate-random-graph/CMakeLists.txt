@@ -18,6 +18,6 @@ if (${SC_CLANG_FORMAT_CODE})
 endif ()
 
 if (${SC_BUILD_TESTS})
-    set(EXAMPLE_MODULE_SRC_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+    set(MODULE-GENERATE-RANDOM-GRAPH_SRC_PATH ${CMAKE_CURRENT_SOURCE_DIR})
     add_subdirectory(test)
 endif ()

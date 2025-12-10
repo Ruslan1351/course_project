@@ -4,7 +4,7 @@
 
 namespace dm
 {
-class GenerateRandomGraphModule : public ScModule
+class CondensationCalculationModule : public ScModule
 {
 };
 }
